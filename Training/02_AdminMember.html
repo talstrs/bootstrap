@@ -412,15 +412,34 @@
 							</ul>
 						</div>
 						<div class="row">
-							<div class="col-6">
-								<button type="button" style="border-radius: 20%;" class="btn btn-outline-danger btn-sm">
-									<img src="images/trashcan.png" alt="plusdata" height="25;" >
+							<div class="col-6 d-flex justify-content-start">
+								<button type="button" style="border-radius: 20%;" class="btn btn-outline-danger btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">
+									<img src="images/trashcan.png" alt="plusdata" height="25;">
 								</button>
 							</div>
-							<div class="col-6 d-grid gap-2 d-md-flex justify-content-md-end">
+							<div class="col-6 d-flex justify-content-end">
 								<button type="button" style="border-radius: 20%;" class="btn btn-outline-primary btn-sm">
 									<img src="images/plus.png" alt="plusdata" height="25;">
 								</button>
+							</div>
+						</div>
+						
+						<!-- 모달 부분 -->
+						<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="exampleModalLabel">회원 정보 삭제</h5>
+										<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+									</div>
+									<div class="modal-body">
+										<p>정말 삭제하시겠습니까?</p>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">취소</button>
+										<button type="button" class="btn btn-danger">삭제</button>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
