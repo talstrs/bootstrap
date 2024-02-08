@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+	<div class="container-fluid" >
+		<header class="border-bottom">
+			<nav class="navbar navbar-expand-lg">
+				<div class="container-fluid">
+					<div>
+						<a class="navbar-brand href=#">Won Admin</a>
+					</div>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0 position-absolute top-0 end-0">
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle-sp" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									<img src="images/menuBar.png" alt="menuBar" height="25;">
+								</a>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="#">menu1</a></li>
+									<li><a class="dropdown-item" href="#">menu2</a></li>
+									<li><a class="dropdown-item" href="#">menu3</a></li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="nav-brand" href="#">
+									<img src="images/people.png" height="40;" alt="mypage">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<!--중간-->
+		<div class="d-flex row">
+			<!--사이드바-->
+			<aside class = "col-2 border-end">
+				<div style="width: 280px;" style="height:100%">
+					<ul class="nav nav-pills flex-column mb-auto">
+						<li class="nav-item">
+							<a href="#" class="nav-link text-black" aria-current="page" text-black>
+								<svg class="bi me-0" width="16" height="16"><use xlink:href="#"/></svg>
+								Home
+							</a>
+						</li>
+						<li>
+							<a href="#" class="nav-link text-black">
+								<svg class="bi me-0" width="16" height="16"><use xlink:href="#"/></svg>
+								공지사항
+							</a>
+						</li>
+						<li class="dropdown ">
+							<a href="#" class="nav-link text-black dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">
+								<svg class="bi me-0" width="16" height="16"><use xlink:href="#"/></svg>
+								회원관리
+							</a>
+							<ul class="dropdown-menu dropdown-menu-end">
+								<li><a class="dropdown-item" href="#">회원관리1</a></li>
+								<li><a class="dropdown-item" href="#">회원관리2</a></li>
+								<li><a class="dropdown-item" href="#">회원관리3</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="nav-link text-black dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">
+								<svg class="bi me-0" width="16" height="16"><use xlink:href="#"/></svg>
+								스폰서관리
+							</a>
+							<ul class="dropdown-menu dropdown-menu-end">
+								<li><a class="dropdown-item" href="#">스폰서관리1</a></li>
+								<li><a class="dropdown-item" href="#">스폰서관리2</a></li>
+								<li><a class="dropdown-item" href="#">스폰서관리3</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="nav-link text-black dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">
+								<svg class="bi me-0" width="16" height="16"><use xlink:href="#"/></svg>
+								광고관리
+							</a>
+							<ul class="dropdown-menu dropdown-menu-end">
+								<li><a class="dropdown-item" href="#">광고관리1</a></li>
+								<li><a class="dropdown-item" href="#">광고관리2</a></li>
+								<li><a class="dropdown-item" href="#">광고관리3</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="nav-link text-black dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">
+								<svg class="bi me-0" width="16" height="16"><use xlink:href="#"/></svg>
+								서비스관리
+							</a>
+							<ul class="dropdown-menu dropdown-menu-end">
+								<li><a class="dropdown-item" href="#">서비스관리1</a></li>
+								<li><a class="dropdown-item" href="#">서비스관리2</a></li>
+								<li><a class="dropdown-item" href="#">서비스관리3</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="nav-link text-black dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">
+								<svg class="bi me-0" width="16" height="16"><use xlink:href="#"/></svg>
+								커뮤니케이션
+							</a>
+							<ul class="dropdown-menu dropdown-menu-end">
+								<li><a class="dropdown-item" href="#">커뮤니케이션1</a></li>
+								<li><a class="dropdown-item" href="#">커뮤니케이션2</a></li>
+								<li><a class="dropdown-item" href="#">커뮤니케이션3</a></li>
+							</ul>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								<svg class="bi me-0" width="16" height="16"><use xlink:href="#"/></svg>
+								시스템관리
+							</a>
+							<ul class="dropdown-menu dropdown-menu-end">
+								<li><a class="dropdown-item" href="#">시스템관리1</a></li>
+								<li><a class="dropdown-item" href="#">시스템관리2</a></li>
+								<li><a class="dropdown-item" href="#">시스템관리3</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="nav-link text-black">
+								<svg class="bi me-0" width="16" height="16"><use xlink:href="#"/></svg>
+								개인정보관리
+							</a>
+						</li>
+						<li>
+							<a href="#" class="nav-link text-black">
+								<svg class="bi me-0" width="16" height="16"><use xlink:href="#"/></svg>
+								test
+							</a>
+						</li>
+						<li>
+							<a href="#" class="nav-link text-black">
+								<svg class="bi me-0" width="16" height="16"><use xlink:href="#"/></svg>
+								gps
+							</a>
+						</li>
+					</ul>
+                    <div class="fixed-bottom p-3">
+						<a href="#" class="nav-link  text-black-50 col">
+							<svg class="bi me-0" width="16" height="16"><use xlink:href="#"/></svg>
+							<img src="/images/logout.png" alt="logout" height="20;">
+							Collapsed View
+						</a>
+					</div>
+				</div>
+			</aside>
+			<!--섹션-->
+				<section class="col-10 p-0">
+					<div class="bg-body-secondary p-4">
+						<div class="h6">
+							<a href="#" class="text-decoration-none">page 1</a>
+							>
+							<a href="#" class="text-decoration-none">page 2</a>
+							> Default
+						</div>
+						<div class="h2"><strong>회원관리</strong></div>
+                        <div class="border border-secondary rounded" style="border-radius: 10;" >
+                            <div class="border-bottom border-secondary p-3 h5 m-0">
+                                기본 정보
+                            </div>
+                            <div class="bg-light">
+                                <div class="row p-3">
+                                    <div class="col-12 row">
+                                        <div class="col-3 mb-3">
+                                            <label for="code" class="form-label ps-3">코드<span class="text-danger fs-0">*</span></label>
+                                            <input class="form-control" type="text" placeholder="자동생성" aria-label="Disabled input example" disabled>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 row">
+                                        <div class="col-3 mb-3">
+                                            <label for="code" class="form-label ps-3">소셜아이디<span class="text-danger fs-0">*</span></label>
+                                            <input class="form-control" type="text" placeholder="영대소문자,숫자" aria-label="Disabled input example">
+                                        </div>
+                                        <div class="col-3 mb-3">
+                                            <label for="code" class="form-label ps-3">소셜<span class="text-danger fs-0">*</span></label>
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>선택하세요</option>
+                                                <option value="1">소셜1</option>
+                                                <option value="2">소셜2</option>
+                                                <option value="3">소셜3</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-3 mb-3">
+                                            <label for="code" class="form-label ps-3">이름<span class="text-danger fs-0">*</span></label>
+                                            <input class="form-control" type="text" placeholder="영대소문자,숫자" aria-label="Disabled input example">
+                                        </div>
+                                        <div class="col-3 mb-3">
+                                            <label for="code" class="form-label ps-3">성별<span class="text-danger fs-0">*</span></label>
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>선택하세요</option>
+                                                <option value="1">성별1</option>
+                                                <option value="2">성별2</option>
+                                                <option value="3">성별3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 row">
+                                        <div class="col-3 mb-3">
+                                            <label for="code" class="form-label ps-3">출생일<span class="text-danger fs-0">*</span></label>
+                                            <input class="form-control" type="text" placeholder="영대소문자,숫자" aria-label="Disabled input example">
+                                        </div>
+                                        <div class="col-3 mb-3">
+                                            <label for="code" class="form-label ps-3">이메일<span class="text-danger fs-0">*</span></label>
+                                            <input class="form-control" type="text" placeholder="영대소문자,숫자" aria-label="Disabled input example">
+                                        </div>
+                                        <div class="col-3 mb-3">
+                                            <label for="code" class="form-label ps-3">전화번호<span class="text-danger fs-0">*</span></label>
+                                            <input class="form-control" type="text" placeholder="영대소문자,숫자" aria-label="Disabled input example">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 row">
+                                        <div class="col-3 mb-3">
+                                            <label for="code" class="form-label ps-3">자택지역1<span class="text-danger fs-0">*</span></label>
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>선택하세요</option>
+                                                <option value="1">자택지역1-1</option>
+                                                <option value="2">자택지역1-2</option>
+                                                <option value="3">자택지역1-3</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-3 mb-3">
+                                            <label for="code" class="form-label ps-3">자택지역2<span class="text-danger fs-0">*</span></label>
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>선택하세요</option>
+                                                <option value="1">자택지역2-1</option>
+                                                <option value="2">자택지역2-2</option>
+                                                <option value="3">자택지역2-3</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-3 mb-3">
+                                            <label for="code" class="form-label ps-3">사무실지역1<span class="text-danger fs-0">*</span></label>
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>선택하세요</option>
+                                                <option value="1">사무실지역1-1</option>
+                                                <option value="2">사무실지역1-2</option>
+                                                <option value="3">사무실지역1-3</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-3 mb-3">
+                                            <label for="code" class="form-label ps-3">사무실지역2<span class="text-danger fs-0">*</span></label>
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>선택하세요</option>
+                                                <option value="1">사무실지역2-1</option>
+                                                <option value="2">사무실지역2-2</option>
+                                                <option value="3">사무실지역2-3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 row">
+                                        <div class="col-3 mb-3">
+                                            <label for="code" class="form-label ps-3">우편번호</label>
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control" placeholder="숫자만" aria-label="Recipient's username" aria-describedby="button-addon2">
+                                                <button class="btn btn-outline-secondary" type="button" id="button-addon2">X</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 mb-3">
+                                            <label for="code" class="form-label ps-3">주소</label>
+                                            <input class="form-control" type="text" placeholder="숫자만" aria-label="Disabled input example">
+                                        </div>
+                                        <div class="col-3 mb-3">
+                                            <label for="code" class="form-label ps-3">상세주소</label>
+                                            <input class="form-control" type="text" placeholder="숫자만" aria-label="Disabled input example">
+                                        </div>
+                                        <div class="col-3 mb-3">
+                                            <label for="code" class="form-label ps-3">참고항목</label>
+                                            <input class="form-control" type="text" placeholder="숫자만" aria-label="Disabled input example">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 row">
+                                        <div class="col-3 mb-3">
+                                            <label for="code" class="form-label ps-3">이용약관<span class="text-danger fs-0">*</span></label>
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>O</option>
+                                                <option value="1">X</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-3 mb-3">
+                                            <label for="code" class="form-label ps-3">개인정보<span class="text-danger fs-0">*</span></label>
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>O</option>
+                                                <option value="1">X</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-3 mb-3">
+                                            <label for="code" class="form-label ps-3">위치정보<span class="text-danger fs-0">*</span></label>
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>O</option>
+                                                <option value="1">X</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-3 mb-3">
+                                            <label for="code" class="form-label ps-3">앱<span class="text-danger fs-0">*</span></label>
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>O</option>
+                                                <option value="1">X</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 row">
+                                        <div class="col-3 mb-3">
+                                            <label for="code" class="form-label ps-3">앱 상태<span class="text-danger fs-0">*</span></label>
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>O</option>
+                                                <option value="1">X</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-3 mb-3">
+                                            <label for="code" class="form-label ps-3">앱 공지<span class="text-danger fs-0">*</span></label>
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>O</option>
+                                                <option value="1">X</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-3 mb-3">
+                                            <label for="code" class="form-label ps-3">앱 탈퇴<span class="text-danger fs-0">*</span></label>
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>O</option>
+                                                <option value="1">X</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 row">
+                                        <div class="col-3 mb-3">
+                                            <label for="code" class="form-label ps-3">우편번호</label>
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control" placeholder="숫자만" aria-label="Recipient's username" aria-describedby="button-addon2">
+                                                <button class="btn btn-outline-secondary" type="button" id="button-addon2">X</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 mb-3">
+                                            <label for="code" class="form-label ps-3">주소</label>
+                                            <input class="form-control" type="text" placeholder="숫자만" aria-label="Disabled input example">
+                                        </div>
+                                        <div class="col-3 mb-3">
+                                            <label for="code" class="form-label ps-3">상세주소</label>
+                                            <input class="form-control" type="text" placeholder="숫자만" aria-label="Disabled input example">
+                                        </div>
+                                        <div class="col-3 mb-3">
+                                            <label for="code" class="form-label ps-3">참고항목</label>
+                                            <input class="form-control" type="text" placeholder="숫자만" aria-label="Disabled input example">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 row">
+                                        <div class="col-3 mb-3">
+                                            <label for="code" class="form-label ps-3">모바일 OS<span class="text-danger fs-0">*</span></label>
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>선택하세요</option>
+                                                <option value="1">모바일 OS-1</option>
+                                                <option value="2">모바일 OS-2</option>
+                                                <option value="3">모바일 OS-3</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-3 mb-3">
+                                            <label for="code" class="form-label ps-3">모바일토큰</label>
+                                            <input class="form-control" type="text" placeholder="숫자만" aria-label="Disabled input example">
+                                        </div>
+                                        <div class="col-3 mb-3">
+                                            <label for="code" class="form-label ps-3">FCM토큰</label>
+                                            <input class="form-control" type="text" placeholder="숫자만" aria-label="Disabled input example">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 row">
+                                        <div class="col-3 mb-3">
+                                            <label for="code" class="form-label ps-3">예금주</label>
+                                            <input class="form-control" type="text" placeholder="숫자만" aria-label="Disabled input example">
+                                        </div>
+                                        <div class="col-3 mb-3">
+                                            <label for="code" class="form-label ps-3">은행</label>
+                                            <input class="form-control" type="text" placeholder="숫자만" aria-label="Disabled input example">
+                                        </div>
+                                        <div class="col-3 mb-3">
+                                            <label for="code" class="form-label ps-3">계좌번호</label>
+                                            <input class="form-control" type="text" placeholder="숫자만" aria-label="Disabled input example">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 row">
+                                        <div class="col-3 mb-3">
+                                            <label for="code" class="form-label ps-3">차랑명</label>
+                                            <input class="form-control" type="text" placeholder="숫자만" aria-label="Disabled input example">
+                                        </div>
+                                        <div class="col-3 mb-3">
+                                            <label for="code" class="form-label ps-3">차량번호</label>
+                                            <input class="form-control" type="text" placeholder="숫자만" aria-label="Disabled input example">
+                                        </div>
+                                        <div class="col-3 mb-3">
+                                            <label for="code" class="form-label ps-3">차량타입</label>
+                                            <input class="form-control" type="text" placeholder="숫자만" aria-label="Disabled input example">
+                                        </div>
+                                        <div class="col-3 mb-3">
+                                            <label for="code" class="form-label ps-3">차량년식</label>
+                                            <input class="form-control" type="text" placeholder="숫자만" aria-label="Disabled input example">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 row">
+                                        <div class="col-3 mb-3">
+                                            <label for="code" class="form-label ps-3">차량색깔</label>
+                                            <input class="form-control" type="text" placeholder="숫자만" aria-label="Disabled input example">
+                                        </div>
+                                        <div class="col-3 mb-3">
+                                            <label for="code" class="form-label ps-3">차량등록지</label>
+                                            <input class="form-control" type="text" placeholder="숫자만" aria-label="Disabled input example">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 row">
+                                        <div class="col-6">
+                                            <button type="button" style="border-radius: 20%;" class="btn btn-outline-dark btn-sm">
+                                                <img src="images/list.png" alt="plusdata" height="25;" >
+                                            </button>
+                                        </div>
+                                        <div class="col-6 d-grid gap-2 d-md-flex justify-content-md-end">
+                                            <button type="button" style="border-radius: 20%;" class="btn btn-primary btn-sm">
+                                                <img src="images/check.png" alt="plusdata" height="25;">
+                                            </button>
+                                        </div>
+                                    </div>
+
+
+
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+        </div>
+    </div>
+</body>

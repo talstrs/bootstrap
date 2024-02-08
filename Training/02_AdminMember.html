@@ -1,200 +1,434 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
     <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-  </head>
-  <body>
+</head>
+<body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-  
-	<div class="container-fluid p-2" >
-		<header class="border-bottom  ">
+
+	<div class="container-fluid" >
+		<header class="border-bottom">
 			<nav class="navbar navbar-expand-lg">
-  			<div class="container-fluid">
-  				<div >
-    			<a class="navbar-brand href="#">Won Admin</a>
-    			
+				<div class="container-fluid">
+					<div>
+						<a class="navbar-brand" href="#">Won Admin</a>
+					</div>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0 position-absolute top-0 end-0">
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle-sp" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									<img src="images/menuBar.png" alt="menuBar" height="25;">
+								</a>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="#">menu1</a></li>
+									<li><a class="dropdown-item" href="#">menu2</a></li>
+									<li><a class="dropdown-item" href="#">menu3</a></li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="nav-brand" href="#">
+									<img src="images/people.png" height="40;" alt="mypage">
+								</a>
+							</li>
+						</ul>
+					</div>
 				</div>
-			    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    			<ul class="navbar-nav me-auto mb-2 mb-lg-0 position-absolute top-0 end-0">
-        		<li class="nav-item dropdown">
-          		<a class="nav-link dropdown-toggle-sp" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          			<img src="images/menuBar.png" alt="menuBar" height="25;">
-          		</a>
-          		<ul class="dropdown-menu">
-            		<li><a class="dropdown-item" href="#">menu1</a></li>
-	            	<li><a class="dropdown-item" href="#">menu2</a></li>
-	            	<li><a class="dropdown-item" href="#">menu3</a></li>
-          		</ul>
-		        </li>
-		        <li class="nav-item">
-          		<a class="nav-brand" href="#">
-          			<img src="images/people.png" height="40;" alt="mypage">
-          		</a>
-        		</li>
-      			</ul>
-     		</div>
-     		</div>
-     		</nav>
-    		
+			</nav>
 		</header>
-	<div class="d-flex">
-		<aside class = "">
-		<div  style="width: 280px;" style="height:100%">
-		    <ul class="nav nav-pills flex-column mb-auto">
-		      <li class="nav-item">
-		        <a href="#" class="nav-link text-black" aria-current="page" text-black>
-		          <svg class="bi me-0" width="16" height="16"><use xlink:href="#"/></svg>
-		          Home
-		        </a>
-		      </li>
-		      <li>
-		        <a href="#" class="nav-link text-black">
-		          <svg class="bi me-0" width="16" height="16"><use xlink:href="#"/></svg>
-		          공지사항
-		        </a>
-		      </li>
-				<li class="dropdown ">
-		        <a href="#" class="nav-link text-black dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">
-		          <svg class="bi me-0" width="16" height="16"><use xlink:href="#"/></svg>
-		          회원관리
-		        </a>
-		        <ul class="dropdown-menu dropdown-menu-end">
-		        	<li><a class="dropdown-item" href="#">회원관리1</a></li>
-		        	<li><a class="dropdown-item" href="#">회원관리2</a></li>
-		        	<li><a class="dropdown-item" href="#">회원관리3</a></li>
-		        </ul>
-		      </li>
-		      <li class="dropdown">
-		        <a href="#" class="nav-link text-black dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">
-		          <svg class="bi me-0" width="16" height="16"><use xlink:href="#"/></svg>
-		          스폰서관리
-		        </a>
-		        <ul class="dropdown-menu dropdown-menu-end">
-		        	<li><a class="dropdown-item" href="#">스폰서관리1</a></li>
-		        	<li><a class="dropdown-item" href="#">스폰서관리2</a></li>
-		        	<li><a class="dropdown-item" href="#">스폰서관리3</a></li>
-		        </ul>
-		      </li>
-	      		<li class="dropdown">
-		        <a href="#" class="nav-link text-black dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">
-		          <svg class="bi me-0" width="16" height="16"><use xlink:href="#"/></svg>
-		          광고관리
-		        </a>
-		        <ul class="dropdown-menu dropdown-menu-end">
-		        	<li><a class="dropdown-item" href="#">광고관리1</a></li>
-		        	<li><a class="dropdown-item" href="#">광고관리2</a></li>
-		        	<li><a class="dropdown-item" href="#">광고관리3</a></li>
-		        </ul>
-		      </li>
-		      	<li class="dropdown">
-		        <a href="#" class="nav-link text-black dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">
-		          <svg class="bi me-0" width="16" height="16"><use xlink:href="#"/></svg>
-		          서비스관리
-		        </a>
-		        <ul class="dropdown-menu dropdown-menu-end">
-		        	<li><a class="dropdown-item" href="#">서비스관리1</a></li>
-		        	<li><a class="dropdown-item" href="#">서비스관리2</a></li>
-		        	<li><a class="dropdown-item" href="#">서비스관리3</a></li>
-		        </ul>
-		      </li>
-		      	<li class="dropdown">
-		        <a href="#" class="nav-link text-black dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">
-		          <svg class="bi me-0" width="16" height="16"><use xlink:href="#"/></svg>
-		          커뮤니케이션
-		        </a>
-		        <ul class="dropdown-menu dropdown-menu-end">
-		        	<li><a class="dropdown-item" href="#">커뮤니케이션1</a></li>
-		        	<li><a class="dropdown-item" href="#">커뮤니케이션2</a></li>
-		        	<li><a class="dropdown-item" href="#">커뮤니케이션3</a></li>
-		        </ul>
-		      </li>
-		      
-		      <li class="nav-item dropdown">
-          		<a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          			<svg class="bi me-0" width="16" height="16"><use xlink:href="#"/></svg>
-          			시스템관리
-          		</a>
-          		<ul class="dropdown-menu dropdown-menu-end">
-            		<li><a class="dropdown-item" href="#">시스템관리1</a></li>
-	            	<li><a class="dropdown-item" href="#">시스템관리2</a></li>
-	            	<li><a class="dropdown-item" href="#">시스템관리3</a></li>
-          		</ul>
-		        </li>
-		      <li>
-		        <a href="#" class="nav-link text-black">
-		          <svg class="bi me-0" width="16" height="16"><use xlink:href="#"/></svg>
-		          개인정보관리
-		        </a>
-		      </li>
-		      <li>
-		        <a href="#" class="nav-link text-black">
-		          <svg class="bi me-0" width="16" height="16"><use xlink:href="#"/></svg>
-		          test
-		        </a>
-		      </li>
-		      <li>
-		        <a href="#" class="nav-link text-black">
-		          <svg class="bi me-0" width="16" height="16"><use xlink:href="#"/></svg>
-		          gps
-		        </a>
-		      </li>
-		    </ul>
-		    </div>
-		</aside>
-		<div class="vr"></div>
-		<section class="p-3">
-		 <div>
-		 <a href="#" class="text-decoration-none">page 1</a>
-		 >
-		 <a href="#" class="text-decoration-none">page 2</a>
-		 > 회원관리
-		 </div>
-		 <h2>Member</h2>
-		 <div class="d-flex row ">
-		 <select class="form-select  p-2 m-1 col" style="width: 200px;" aria-label="Default select example">
-		 <option selected>N</option>
-		 <option value="1">One</option>
-		 <option value="2">Two</option>
-		 <option value="3">Three</option>
-		 </select>
-		 <select class="form-select  p-2 m-1 col" style="width: 200px;" aria-label="Default select example">
-		 <option selected>수정일</option>
-		 <option value="1">One</option>
-		 <option value="2">Two</option>
-		 <option value="3">Three</option>
-		 </select>
-		 <input type="text" class="border border-1 border-secondary-subtle  p-2 m-1 col" style="width: 200px;"
-		 placeholder="2000-00-00">
-		 <input type="text" class="border border-1 border-secondary-subtle  p-2 m-1 col" style="width: 200px;" 
-		 placeholder="2999-12-31">
-		 <select class="form-select  p-2 m-1 col" style="width: 200px;" aria-label="Default select example">
-		 <option selected>검색구분</option>
-		 <option value="1">One</option>
-		 <option value="2">Two</option>
-		 <option value="3">Three</option>
-		 </select>
-		 <input type="text" class="border border-1 border-secondary-subtle  p-2 m-1 col" style="width: 200px;"
-		 placeholder="검색어">
-		 <div class="col">
-		 <a class="text-decoration-none" href="#">
-         <img src="images/search.png" height="30" alt="searchbutton">
-         </a>
-         <a class="text-decoration-none" href="#">
-         <img src="images/refresh.png" height="30" alt="refresh">
-         </a>
-<!--          버튼 아래쪽 정렬 -->
-<!-- 정렬필요 -->
-         </div>
-		 </div>
-		</section>
-	</div>
+		<!--중간-->
+		<div class="d-flex row">
+			<!--사이드바-->
+			<aside class = "col-2 border-end">
+				<div style="width: 280px;" style="height:100%">
+					<ul class="nav nav-pills flex-column mb-auto ">
+						<li class="nav-item">
+							<a href="#" class="nav-link text-black" aria-current="page" text-black>
+								<svg class="bi me-0" width="16" height="16"><use xlink:href="#"/></svg>
+								Home
+							</a>
+						</li>
+						<li>
+							<a href="#" class="nav-link text-black">
+								<svg class="bi me-0" width="16" height="16"><use xlink:href="#"/></svg>
+								공지사항
+							</a>
+						</li>
+						<li class="dropdown  ">
+							<a href="#" class="nav-link text-black dropdown-toggle  " data-bs-toggle="dropdown" aria-expanded="false">
+								<svg class="bi me-0" width="16" height="16"><use xlink:href="#"/></svg>
+								회원관리
+							</a>
+							<ul class="dropdown-menu dropdown-menu-end">
+								<li><a class="dropdown-item" href="#">회원관리1</a></li>
+								<li><a class="dropdown-item" href="#">회원관리2</a></li>
+								<li><a class="dropdown-item" href="#">회원관리3</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="nav-link text-black dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">
+								<svg class="bi me-0" width="16" height="16"><use xlink:href="#"/></svg>
+								스폰서관리
+							</a>
+							<ul class="dropdown-menu dropdown-menu-end">
+								<li><a class="dropdown-item" href="#">스폰서관리1</a></li>
+								<li><a class="dropdown-item" href="#">스폰서관리2</a></li>
+								<li><a class="dropdown-item" href="#">스폰서관리3</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="nav-link text-black dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">
+								<svg class="bi me-0" width="16" height="16"><use xlink:href="#"/></svg>
+								광고관리
+							</a>
+							<ul class="dropdown-menu dropdown-menu-end">
+								<li><a class="dropdown-item" href="#">광고관리1</a></li>
+								<li><a class="dropdown-item" href="#">광고관리2</a></li>
+								<li><a class="dropdown-item" href="#">광고관리3</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="nav-link text-black dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">
+								<svg class="bi me-0" width="16" height="16"><use xlink:href="#"/></svg>
+								서비스관리
+							</a>
+							<ul class="dropdown-menu dropdown-menu-end">
+								<li><a class="dropdown-item" href="#">서비스관리1</a></li>
+								<li><a class="dropdown-item" href="#">서비스관리2</a></li>
+								<li><a class="dropdown-item" href="#">서비스관리3</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="nav-link text-black dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">
+								<svg class="bi me-0" width="16" height="16"><use xlink:href="#"/></svg>
+								커뮤니케이션
+							</a>
+							<ul class="dropdown-menu dropdown-menu-end">
+								<li><a class="dropdown-item" href="#">커뮤니케이션1</a></li>
+								<li><a class="dropdown-item" href="#">커뮤니케이션2</a></li>
+								<li><a class="dropdown-item" href="#">커뮤니케이션3</a></li>
+							</ul>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								<svg class="bi me-0" width="16" height="16"><use xlink:href="#"/></svg>
+								시스템관리
+							</a>
+							<ul class="dropdown-menu dropdown-menu-end">
+								<li><a class="dropdown-item" href="#">시스템관리1</a></li>
+								<li><a class="dropdown-item" href="#">시스템관리2</a></li>
+								<li><a class="dropdown-item" href="#">시스템관리3</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="nav-link text-black">
+								<svg class="bi me-0" width="16" height="16"><use xlink:href="#"/></svg>
+								개인정보관리
+							</a>
+						</li>
+						<li>
+							<a href="#" class="nav-link text-black">
+								<svg class="bi me-0" width="16" height="16"><use xlink:href="#"/></svg>
+								test
+							</a>
+						</li>
+						<li>
+							<a href="#" class="nav-link text-black">
+								<svg class="bi me-0" width="16" height="16"><use xlink:href="#"/></svg>
+								gps
+							</a>
+						</li>
+					</ul>
+					<div class="position-absolute bottom-0 start-0 p-3">
+						<a href="#" class="nav-link text-black-50 col">
+							<svg class="bi me-0" width="16" height="16"><use xlink:href="#"/></svg>
+							<img src="/images/logout.png" alt="logout" height="20;">
+							Collapsed View
+						</a>
+					</div>
+				</div>
+			</aside>
+			<!--섹션-->
+				<section class="col-10 p-0">
+					<div class="bg-body-secondary p-4">
+						<div class="h6">
+							<a href="#" class="text-decoration-none">page 1</a>
+							>
+							<a href="#" class="text-decoration-none">page 2</a>
+							> 회원관리
+						</div>
+						<h1><strong>Member</strong></h1>
+						<div class="d-flex">
+							<select class="form-select  p-2 m-1" aria-label="Default select example">
+								<option selected>N</option>
+								<option value="1">One</option>
+								<option value="2">Two</option>
+								<option value="3">Three</option>
+							</select>
+							<select class="form-select  p-2 m-1"  aria-label="Default select example">
+								<option selected>수정일</option>
+								<option value="1">One</option>
+								<option value="2">Two</option>
+								<option value="3">Three</option>
+							</select>
+							<input type="text" class="border border-1 border-secondary-subtle  p-2 m-1" placeholder="2000-00-00">
+							<input type="text" class="border border-1 border-secondary-subtle  p-2 m-1" placeholder="2999-12-31">
+							<select class="form-select  p-2 m-1" aria-label="Default select example">
+								<option selected>검색구분</option>
+								<option value="1">One</option>
+								<option value="2">Two</option>
+								<option value="3">Three</option>
+							</select>
+							<input type="text" class="border border-1 border-secondary-subtle  p-2 m-1" placeholder="검색어">
+							<div class="">
+								<button type="button" style="border-radius: 20%;" class="btn btn-outline-dark btn-sm me-md-1">
+									<img src="images/search.png" alt="plusdata" height="25;">
+								</button>
+							</div>
+							
+							<div class="">
+								<button type="button" style="border-radius: 20%;" class="btn btn-outline-dark btn-sm">
+									<img src="images/refresh.png" alt="plusdata" height="25;">
+								</button>
+							</div>
+						</div>
+					</div>
+					<!--테이블 영역-->
+					<div class="p-4">
+						<div class="row">
+							<div class="col-10">
+								Total: 
+							</div>
+							<div class="col-2 end-0">
+								<select class="form-select">
+									<option selected>10</option>
+									<option>25</option>
+									<option>50</option>
+									<option>100</option>
+								</select>
+							</div>
+						</div>
+						<table class="table">
+							<thead>
+								<tr>
+									<th>
+										<input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" disabled>
+									</th>
+									<th>#</th>
+									<th>탈퇴</th>
+									<th>코드</th>
+									<th>이름</th>
+									<th>아이디</th>
+									<th>성별</th>
+									<th>예금주</th>
+									<th>은행</th>
+									<th>계좌번호</th>
+									<th>등록일</th>
+									<th>수정일</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th>
+										<input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+									</th>
+									<td>10</td>
+									<td>N</td>
+									<td>홍길동</td>
+									<td>user10</td>
+									<td>남성</td>
+									<td>Y</td>
+									<td>홍길동</td>
+									<td>농협</td>
+									<td>1234-12-1511</td>
+									<td>2020-02-01 02:08:57</td>
+									<td>2030-02-01 02:08:57</td>
+								</tr>
+								<tr>
+									<th>
+										<input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+									</th>
+									<td>9</td>
+									<td>N</td>
+									<td>홍길동</td>
+									<td>user10</td>
+									<td>남성</td>
+									<td>Y</td>
+									<td>홍길동</td>
+									<td>농협</td>
+									<td>1234-12-1511</td>
+									<td>2020-02-01 02:08:57</td>
+									<td>2030-02-01 02:08:57</td>
+								</tr>
+								<tr>
+									<th>
+										<input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+									</th>
+									<td>8</td>
+									<td>N</td>
+									<td>홍길동</td>
+									<td>user10</td>
+									<td>남성</td>
+									<td>Y</td>
+									<td>홍길동</td>
+									<td>농협</td>
+									<td>1234-12-1511</td>
+									<td>2020-02-01 02:08:57</td>
+									<td>2030-02-01 02:08:57</td>
+								</tr>
+								<tr>
+									<th>
+										<input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+									</th>
+									<td>7</td>
+									<td>N</td>
+									<td>홍길동</td>
+									<td>user10</td>
+									<td>남성</td>
+									<td>Y</td>
+									<td>홍길동</td>
+									<td>농협</td>
+									<td>1234-12-1511</td>
+									<td>2020-02-01 02:08:57</td>
+									<td>2030-02-01 02:08:57</td>
+								</tr>
+								<tr>
+									<th>
+										<input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+									</th>
+									<td>6</td>
+									<td>N</td>
+									<td>홍길동</td>
+									<td>user10</td>
+									<td>남성</td>
+									<td>Y</td>
+									<td>홍길동</td>
+									<td>농협</td>
+									<td>1234-12-1511</td>
+									<td>2020-02-01 02:08:57</td>
+									<td>2030-02-01 02:08:57</td>
+								</tr>
+								<tr>
+									<th>
+										<input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+									</th>
+									<td>5</td>
+									<td>N</td>
+									<td>홍길동</td>
+									<td>user10</td>
+									<td>남성</td>
+									<td>Y</td>
+									<td>홍길동</td>
+									<td>농협</td>
+									<td>1234-12-1511</td>
+									<td>2020-02-01 02:08:57</td>
+									<td>2030-02-01 02:08:57</td>
+								</tr>
+								<tr>
+									<th>
+										<input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+									</th>
+									<td>4</td>
+									<td>N</td>
+									<td>홍길동</td>
+									<td>user10</td>
+									<td>남성</td>
+									<td>Y</td>
+									<td>홍길동</td>
+									<td>농협</td>
+									<td>1234-12-1511</td>
+									<td>2020-02-01 02:08:57</td>
+									<td>2030-02-01 02:08:57</td>
+								</tr>
+								<tr>
+									<th>
+										<input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+									</th>
+									<td>3</td>
+									<td>N</td>
+									<td>홍길동</td>
+									<td>user10</td>
+									<td>남성</td>
+									<td>Y</td>
+									<td>홍길동</td>
+									<td>농협</td>
+									<td>1234-12-1511</td>
+									<td>2020-02-01 02:08:57</td>
+									<td>2030-02-01 02:08:57</td>
+								</tr>
+								<tr>
+									<th>
+										<input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+									</th>
+									<td>2</td>
+									<td>N</td>
+									<td>홍길동</td>
+									<td>user10</td>
+									<td>남성</td>
+									<td>Y</td>
+									<td>홍길동</td>
+									<td>농협</td>
+									<td>1234-12-1511</td>
+									<td>2020-02-01 02:08:57</td>
+									<td>2030-02-01 02:08:57</td>
+								</tr>
+								<tr>
+									<th>
+										<input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+									</th>
+									<td>1</td>
+									<td>N</td>
+									<td>홍길동</td>
+									<td>user10</td>
+									<td>남성</td>
+									<td>Y</td>
+									<td>홍길동</td>
+									<td>농협</td>
+									<td>1234-12-1511</td>
+									<td>2020-02-01 02:08:57</td>
+									<td>2030-02-01 02:08:57</td>
+								</tr>
+							</tbody>
+						</table>
+						<div aria-label="Page navigation example">
+							<ul class="pagination justify-content-center">
+								<li class="page-item">
+									<a class="page-link" href="#" aria-label="Previous">
+										<span aria-hidden="true">&laquo;</span>
+									</a>
+								</li>
+								<li class="page-item"><a class="page-link" href="#">1</a></li>
+								<li class="page-item"><a class="page-link" href="#">2</a></li>
+								<li class="page-item"><a class="page-link" href="#">3</a></li>
+								<li class="page-item"><a class="page-link" href="#">4</a></li>
+								<li class="page-item"><a class="page-link" href="#">5</a></li>
+								<li class="page-item">
+									<a class="page-link" href="#" aria-label="Next">
+										<span aria-hidden="true">&raquo;</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="row">
+							<div class="col-6">
+								<button type="button" style="border-radius: 20%;" class="btn btn-outline-danger btn-sm">
+									<img src="images/trashcan.png" alt="plusdata" height="25;" >
+								</button>
+							</div>
+							<div class="col-6 d-grid gap-2 d-md-flex justify-content-md-end">
+								<button type="button" style="border-radius: 20%;" class="btn btn-outline-primary btn-sm">
+									<img src="images/plus.png" alt="plusdata" height="25;">
+								</button>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
 	<footer>
-	
 	</footer>
-	</div>
-  </body>
+</div>
+</body>
 </html>
