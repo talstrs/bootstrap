@@ -6,6 +6,10 @@
     <title>Bootstrap demo</title>
     <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    
+    
+  
+  
 </head>
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
@@ -164,9 +168,9 @@
 							<div class="col-2">
 								<select class="form-select p-2 m-1" aria-label="Default select example">
 									<option selected>N</option>
-									<option value="1">One</option>
-									<option value="2">Two</option>
-									<option value="3">Three</option>
+									<option value="1">삭제여부</option>
+									<option value="2">Y</option>
+									<option value="3">N</option>
 								</select>
 							</div>
 							<div class="col-2">
@@ -177,8 +181,57 @@
 									<option value="3">Three</option>
 								</select>
 							</div>
-							<input type="text" class="border border-1 border-secondary-subtle col-2 p-2 m-1" placeholder="2000-00-00">
-							<input type="text" class="border border-1 border-secondary-subtle col-2 p-2 m-1" placeholder="2999-12-31">
+<!-- 						html 기본 datepicker
+							<input type="datetime-local" class="border border-1 border-secondary-subtle col-2 p-2 m-1" placeholder="2000-00-00"> -->
+							<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+							<link rel="stylesheet" type="text/css" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.min.css">
+							<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.full.min.js"></script>
+							
+							<input type="text" class="datetimepicker border border-1 border-secondary-subtle col-2 p-2 m-1" placeholder="2000-00-00 00:00" readonly>
+							<script type="text/javascript">
+								$(function () {
+									$(".datetimepicker").datetimepicker({ 
+										format: "Y-m-d H:i",
+									});
+								});
+							</script>
+							
+<!-- 							<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+<!-- 							<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+<!-- 							<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+							
+							
+							<link rel="stylesheet" href="/xdm/v1/css/datetimepicker/jquery.datetimepicker.min.css" />
+							<script src="/xdm/v1/jquery/datetimepicker/jquery.datetimepicker.full.min.js"></script>
+							<script>
+							window.addEventListener('load', function() {
+								$("#shDateStart").datetimepicker({
+									
+						 			format: 'Y-m-d H:i'
+								});
+							});
+// 							$.datepicker.setDefaults({
+// 								dateFormat: 'yy-mm-dd',
+// 								prevText: '이전 달',
+// 								nextText: '다음 달',
+// 								monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+// 								monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+// 								dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+// 								dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+// 								dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+// 								showMonthAfterYear: true,
+// 								yearSuffix: '년'
+// 								});
+
+// 								$(function () {
+								
+// 									$('.datepicker').datepicker(
+										
+// 									)
+// 								});
+						</script>
+						<input type="text" id="shDateStart" class="border border-1 border-secondary-subtle col-2 p-2 m-1" placeholder="2999-12-31 00:00" readonly>
+							
 							<div class="col-12 row">
 								<div class="col-2">
 									<select class="form-select p-2 m-1" aria-label="Default select example">
